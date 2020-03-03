@@ -37,7 +37,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://${SALLEFY_DB_HOST}:${SALLEFY_DB_PORT}/${SALLEFY_DB_NAME}?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    url: jdbc:mysql://${SALLEFY_DB_HOST}:${SALLEFY_DB_PORT}/${SALLEFY_DB_NAME}?allowPublicKeyRetrival=true&useSSL=false&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
     username: ${SALLEFY_DB_USER}
     password: ${SALLEFY_DB_PASSWORD}
     hikari:
